@@ -1,0 +1,9 @@
+# gradle/libs.versions.toml
+[versions]
+lifecycleViewmodelCompose = "2.10.0"
+
+[libraries]
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
+
+// app/build.gradle.kts, dentro de dependencies { }
+implementation(libs.androidx.lifecycle.viewmodel.compose)
